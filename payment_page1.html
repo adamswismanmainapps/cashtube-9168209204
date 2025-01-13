@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://allappsreveiws.com.ng/bluepay/pay.html -->
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_GhlyMg"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monnify Payment Integration</title>
+    <script type="text/javascript" src="./payment_page1_files/monnify.js.download"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./payment_page1_files/css2" rel="stylesheet">
+    <style>
+        body {
+            background: grey;
+            font-family: "Rubik", sans-serif;
+        }
+        .box {
+            width: 90%;
+            height: 410px;
+            background: #ffffff;
+            margin: 0 auto;
+            box-shadow: 10px 5px 50px grey;
+        }
+        .box h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+        .box p {
+           padding-left: 15px;
+        }
+        .all {
+            width: 90%;
+            height: 230px;
+            margin: 0 auto;
+        }
+        .all button {
+            width: 50%;
+            height: 36px;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            color: white;
+            background: green;
+            cursor: pointer;
+        }
+    </style>
+<style>
+@keyframes slide-in-one-tap {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.trust-hide-gracefully {
+  opacity: 0;
+}
+
+.trust-wallet-one-tap .hidden {
+    display: none;
+  }
+
+.trust-wallet-one-tap .semibold {
+    font-weight: 500;
+  }
+
+.trust-wallet-one-tap .binance-plex {
+    font-family: 'Binance';
+  }
+
+.trust-wallet-one-tap .rounded-full {
+    border-radius: 50%;
+  }
+
+.trust-wallet-one-tap .flex {
+    display: flex;
+  }
+
+.trust-wallet-one-tap .flex-col {
+    flex-direction: column;
+  }
+
+.trust-wallet-one-tap .items-center {
+    align-items: center;
+  }
+
+.trust-wallet-one-tap .space-between {
+    justify-content: space-between;
+  }
+
+.trust-wallet-one-tap .justify-center {
+    justify-content: center;
+  }
+
+.trust-wallet-one-tap .w-full {
+    width: 100%;
+  }
+
+.trust-wallet-one-tap .box {
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+    width: 384px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1020;
+  }
+
+.trust-wallet-one-tap .header {
+    gap: 15px;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 18px;
+  }
+
+.trust-wallet-one-tap .header .left-items {
+      gap: 15px
+    }
+
+.trust-wallet-one-tap .header .title {
+      color: #1E2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+.trust-wallet-one-tap .header .subtitle {
+      color: #474D57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .header .close {
+      color: #1E2329;
+      cursor: pointer;
+    }
+
+.trust-wallet-one-tap .body {
+    padding: 9px 18px;
+    gap: 10px;
+
+  }
+
+.trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+.trust-wallet-one-tap .body .right-items .wallet-title {
+        color: #1E2329;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .body .right-items .wallet-subtitle {
+        color: #474D57;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .connect-indicator {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+.trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474D57;
+    }
+
+.trust-wallet-one-tap .loading-color {
+    color: #FFF;
+  }
+
+.trust-wallet-one-tap .button {
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(5, 0, 255);
+    border-color: rgb(229, 231, 235);
+    cursor: pointer;
+    text-align: center;
+    height: 45px;
+  }
+
+.trust-wallet-one-tap .button .button-text {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .footer {
+    margin: 20px 30px;
+  }
+
+.trust-wallet-one-tap .check-icon {
+    color: #FFF;
+  }
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+</style></head>
+<body>
+    <div class="box"><br> 
+        <div class="all">
+            <h1>Payment</h1>
+            <p>
+                An email will be generated for you to keep your identity safe. Your code will be displayed on the next page once your payment is successful.
+                It is advisable to stay on the page after completing your payment, as you will be redirected to view your BPC code. Its cost ₦5500.
+                <br><br> 
+                You can use Bank Transfer, POS, or Card payment.
+                <br><br>
+                Please wait for 1 minute after payment is successful to ensure proper redirection.
+            </p>
+            <button id="pay-button">Pay Now</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const nigerianNames = [
+            "0073262626pg", "0073262626hg", "0073262626pqw",
+            "0073262626hhg", "0073262626prt", "007326262666pg",
+            "00732626268"
+        ];
+
+        function getRandomNigerianName() {
+            const randomIndex = Math.floor(Math.random() * nigerianNames.length);
+            return nigerianNames[randomIndex];
+        }
+
+        function getRandomEmail(name) {
+            const domain = "gmail.com";
+            const email = name.toLowerCase().replace(/\s+/g, '') + "@" + domain;
+            return email;
+        }
+
+        document.getElementById('pay-button').addEventListener('click', function () {
+            window.location.href = "pay.html"
+        }
+      );
+    </script>
+
+</body></html>
